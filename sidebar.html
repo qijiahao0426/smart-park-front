@@ -1,3 +1,4 @@
+<script src="js/get/showBuilds.js"></script>
 
   <!-- Sidebar - Brand -->
   <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
@@ -19,7 +20,7 @@
     <div id="parkcontrol" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
       <div class="bg-white py-2 collapse-inner rounded">
         <a class="collapse-item" href="index.html">园区概况</a>
-        <a class="collapse-item" href="organization.html">楼宇概况</a>
+        <a class="collapse-item" href="build_list.html">楼宇概况</a>
       </div>
     </div>
   </li>
@@ -30,9 +31,9 @@
       <span>资产管理</span>
     </a>
     <div id="assetcontrol" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-      <div class="bg-white py-2 collapse-inner rounded">
+      <div class="bg-white py-2 collapse-inner rounded" id="room_manager">
         <a class="collapse-item" href="build_list.html">楼宇列表</a>
-        <a class="collapse-item" href="room_manager.html">房源管理</a>
+        <h6 class="collapse-header">房源管理:</h6>
       </div>
     </div>
   </li>
@@ -44,8 +45,13 @@
     </a>
     <div id="parkincontrol" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
       <div class="bg-white py-2 collapse-inner rounded">
-        <a class="collapse-item" href="build_list.html">入园企业信息</a>
-        <a class="collapse-item" href="room_manager.html">企业运行数据</a>
+        <h6 class="collapse-header">入园企业信息:</h6>
+        <a class="collapse-item" href="enterprise_list.html">已入驻</a>
+        <a class="collapse-item" href="unenterprise_list.html">已退驻</a>
+        <h6 class="collapse-header">企业运行数据:</h6>
+        <a class="collapse-item" href="push.html">已上报</a>
+        <a class="collapse-item" href="unpush.html">未上报</a>
+
       </div>
     </div>
   </li>

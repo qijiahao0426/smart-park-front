@@ -18,7 +18,7 @@
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
   <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="js/get/getRoomByBuild.js"></script>
+  <script src="js/get/getAllPush.js"></script>
 
 </head>
 
@@ -90,11 +90,6 @@
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
-          <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">园区</h1>
-          </div>
-
           <!-- Content Row -->
           <div class="row">
             <!-- DataTales Example -->
@@ -102,50 +97,38 @@
               <!-- DataTales Example -->
               <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">房源管理</h6>
+                  <h6 class="m-0 font-weight-bold text-primary">企业运行数据</h6>
                 </div>
                 <div class="card-body">
                   <div class="table-responsive">
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                       <thead>
                         <tr>
-                          <th>房间号</th>
-                          <th>楼宇名称</th>
-                          <th>楼层</th>
-                          <th>面积</th>
-                          <th>租售状态</th>
-                          <th>金额</th>
-                          <th>房源状态</th>
-                          <th>可入驻时间</th>
-                          <th>入驻企业</th>
+                          <th>上报时间</th>
+                          <th>企业名称</th>
+                          <th>本月纳税</th>
+                          <th>企业人数</th>
+                          <th>本月新增人数</th>
                         </tr>
                       </thead>
                       <tfoot>
                         <tr>
-                          <th>房间号</th>
-                          <th>楼宇名称</th>
-                          <th>楼层</th>
-                          <th>面积</th>
-                          <th>租售状态</th>
-                          <th>金额</th>
-                          <th>房源状态</th>
-                          <th>可入驻时间</th>
-                          <th>入驻企业</th>
+                          <th>上报时间</th>
+                          <th>企业名称</th>
+                          <th>本月纳税</th>
+                          <th>企业人数</th>
+                          <th>本月新增人数</th>
                         </tr>
                       </tfoot>
-                      <tbody id="room">
+                      <tbody id="push">
                         <tr>
                           <td></td>
                           <td></td>
                           <td></td>
                           <td></td>
                           <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
                         </tr>
-                      
+                        
                       </tbody>
                     </table>
                   </div>
